@@ -14,7 +14,7 @@ variable "vpc_security_group_ids" {
   type        = string
 
 }
-variable "name" {
+variable "Name" {
     description = "value for the name"
     type= string
   
