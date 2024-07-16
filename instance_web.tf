@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source  = "./module"
+  source  = "./modules/terraform/module"
 
   name = "single-instance"
   ami = ami-0a0e5d9c7acc336f1
