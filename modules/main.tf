@@ -3,6 +3,7 @@ resource "aws_instance" "web" {
   instance_type = var.instance_type
   key_name = "users"
   vpc_security_group_ids = [var.vpc_security_group_ids]
+  availability_zone = "us-east-1a"
   tags = {
     Name = var.Name
   }
