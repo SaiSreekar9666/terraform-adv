@@ -1,7 +1,5 @@
-
 module "ec2_instance" {
   source  = "./module"
-
 
   name = "single-instance"
 
@@ -10,6 +8,6 @@ module "ec2_instance" {
   vpc_security_group_ids = ["sg-0ab80f7652fa6e7e6"]
 
   tags = {
-    Name = "instance-web"
-}
+    Name= "instance-web"
+  }
 }
