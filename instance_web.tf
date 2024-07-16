@@ -2,12 +2,15 @@ module "ec2_instance" {
   source  = "./module"
 
   name = "single-instance"
+  ami = ami-0a0e5d9c7acc336f1
 
   instance_type          = "t2.micro"
   key_name               = "users"
-  vpc_security_group_ids = ["sg-0ab80f7652fa6e7e6"]
+  monitoring             = true
+  vpc_security_group_ids = ["sg-12345678"]
+  
 
   tags = {
-    Name= "instance-web"
+    Name="instance-web"
   }
 }
