@@ -87,7 +87,7 @@ resource "aws_route_table" "ibm_db_rt" {
     nat_gateway_id = aws_nat_gateway.ibm_nat.id
   }
   tags = {
-    Name = "ibm-db-rt"
+    Name = "var.ibm_db_rt"
   }
 
 }
