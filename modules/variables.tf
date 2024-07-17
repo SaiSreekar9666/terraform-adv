@@ -19,9 +19,3 @@ variable "instance_public_ip" {
   type=list(string)
   
 }
-variable "vpc_security_group_ids" {
-  description = "sg assigns to the server"
-  type=list(string)
-  default = []
-  
-}
