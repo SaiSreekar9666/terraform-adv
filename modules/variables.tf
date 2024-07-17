@@ -63,7 +63,7 @@ variable "ibm_web_rt" {
   type=string
   
 }
-variable " ibm_db_rt" {
+variable "ibm_db_rt" {
   description = "value for the db-rt"
   type=string
   
