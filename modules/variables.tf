@@ -5,17 +5,17 @@ variable "ami" {
 
 }
 variable "instance_type" {
-  description = "Value of the Name tag for the EC2 instance"
+  description = "Value of the Name tag for the EC2 instance_type"
   type        = string
 
 }
 variable "vpc_security_group_ids" {
-  description = "Value of the Name vpc"
+  description = "Value of the Name vpc_sg"
   type        = string
 
 }
 variable "Name" {
-    description = "value for the name"
+    description = "value for the Name"
     type= string
   
 }
