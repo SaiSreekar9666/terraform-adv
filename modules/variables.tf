@@ -14,3 +14,7 @@ variable "vpc_security_group_ids" {
   type        = string
 
 }
+variable "Name" {
+  description = "value"
+  type =string
+}

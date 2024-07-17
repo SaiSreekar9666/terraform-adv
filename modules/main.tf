@@ -5,6 +5,6 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [var.vpc_security_group_ids]
   availability_zone = "us-east-1a"
   tags = {
-    Name = "web"
+    Name = var.Name
   }
 }
