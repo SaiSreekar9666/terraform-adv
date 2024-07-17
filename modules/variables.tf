@@ -14,3 +14,14 @@ variable "vpc_security_group_ids" {
   type        = string
 
 }
+variable "instance_public_ip" {
+  description = "instance_public-ip"
+  type=list(string)
+  
+}
+variable "vpc_security_group_ids" {
+  description = "sg assigns to the server"
+  type=list(string)
+  default = []
+  
+}
