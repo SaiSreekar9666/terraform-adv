@@ -1,10 +1,14 @@
-resource "aws_instance" "count" {
-  count = 4 # create four similar EC2 instances
+resource "aws_instance" "instancess" {
+  for_each = var.instancess
 
-  ami           = "ami-0a0e5d9c7acc336f1"
-  instance_type = "t2.micro"
+  ami           = each.value.ami
+  instance_type = each.value.instance_type
+
+  root_block_device {
+    volume_size = each.value.volume_size
+  }
 
   tags = {
-    Name = "Server ${count.index}"
+    Name = each.key
   }
 }
