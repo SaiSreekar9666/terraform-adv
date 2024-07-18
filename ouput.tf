@@ -5,6 +5,7 @@ output "instance_details" {
       public_ip     = instance.public_ip
       instance_ids = instance.id
     
+    
     }
   }
 }

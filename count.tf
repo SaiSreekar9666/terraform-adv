@@ -4,6 +4,7 @@ resource "aws_instance" "instancess" {
   ami           = each.value.ami
   instance_type = each.value.instance_type
   
+  
  
 
   root_block_device {
