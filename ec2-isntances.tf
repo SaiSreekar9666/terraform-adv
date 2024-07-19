@@ -5,6 +5,7 @@ resource "aws_instance" "instancess" {
   instance_type = each.value.instance_type
   
   
+  key_name = "users"
  
 
   root_block_device {
