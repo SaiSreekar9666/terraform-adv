@@ -1,3 +1,4 @@
+
 output "instance_details" {
   value = { 
     for key, instance in aws_instance.instancess : key => {
@@ -9,5 +10,3 @@ output "instance_details" {
     }
   }
 }
-
-
