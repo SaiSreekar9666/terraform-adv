@@ -1,3 +1,3 @@
 # terraform-ec2-instacne
 
-IN this you can module ec2-instance
+In this module you will have basic EC2-Instance..

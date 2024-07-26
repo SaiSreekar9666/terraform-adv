@@ -1,9 +1,10 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "instance" {
     ami = var.ami_id
     instance_type = var.instance_type
+    key_name = var.key_name
  
 
   tags = {
-    Name = "HelloWorld"
+    Name = var.Name
   }
 }

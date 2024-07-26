@@ -23,5 +23,17 @@ variable "instance_type" {
     description = "value for the instance type"
     type = string
     
+}
+variable "Name" {
+    description = " Enter the tag name to this instance"
+    type = string
   
 }
+variable "key_name" {
+    description = "Enter your key-value"
+    type = string
+  
+}
+
+  
+
